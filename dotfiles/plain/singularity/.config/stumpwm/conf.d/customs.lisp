@@ -29,13 +29,11 @@
 ;; ;; (set-font (make-instance 'xft:font :family "DejaVu Sans Mono Nerd Font" :subfamily "Book" :size 14))
 
 ;; * Defining groups
-;; (grename "Main")
-;; (gnew "F2-Comms")
-;; (gnew "F3-Media")
+(gnew "F2-Comms")
+(gnew "F3-Media")
+(gnew "F4-Gaming")
 ;; (gnew "F4-Admin")
 ;; (gnew "F5-Monitor")
-;; (run-commands "gselect 1
-;; grename F1-Main")
 
 ;; * Define windows placement policy
 ;; Clear rules
@@ -53,10 +51,6 @@
 ;;     (0 t nil :class "Konqueror" :role "...konqueror-mainwindow")
 ;;   (1 t nil :class "urxvt"))
 
-;; (define-frame-preference "F3-Media"
-;;     (0 t nil :class "mpv")
-;;   (1 t nil :class "urxvt" :title "youtube-viewer"))
-
 ;; (define-frame-preference "F2-Comms"
 ;;     (0 nil t :create t :class "Mattermost")
 ;;   (1 t nil :title "...weechat"))
@@ -65,20 +59,8 @@
 ;;     (0 nil t :create t :class "Conky")
 ;;   (1 t nil :class "conky-manager"))
 
-;; (define-frame-preference "F4-Admin"
-;;     (0 nil t :create t :title "ssh"))
-
-
-
-;; (define-frame-preference "Ardour"
-;;     ;;   (0 t   t   :instance "ardour_editor" :type :normal)
-;;     ;; (0 t   t   :title "Ardour - Session Control")
-;;     (0 nil nil :class "urxvt")
-;;   (1 t   nil :type :normal)
-;;   (1 t   t   :instance "ardour_mixer")
-;;   (2 t   t   :instance "jvmetro")
-;;   (1 t   t   :instance "qjackctl")
-;;   (3 t   t   :instance "qjackctl" :role "qjackctlMainForm"))
+(define-frame-preference "F4-Gaming"
+    (0 nil t :create t :class "steam.steam"))
 
 ;; Mode line definition
 (setf *mode-line-foreground-color* "gainsboro")

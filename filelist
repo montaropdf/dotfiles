@@ -5,33 +5,55 @@ tanko=laptop,org,private,tanko,stumpwm
 # Common files
 .emacs
 .config/emacs/core/profile.el
-# .config/emacs/core/init-ivy.el
+.config/emacs/core/init-ivy.el
+.config/emacs/core/init-unicode.el
+.config/emacs/core/init-undo-tree.el
+.config/emacs/core/init-which-key.el
+.config/emacs/core/init-winnav.el
+.config/emacs/core/init-outshine.el
 .config/emacs/core/init-theme.el
 .config/emacs/core/init-conveniences.el
+.config/emacs/core/init-hydra.el
+.config/emacs/core/init-ibuffer.el
+.config/emacs/core/init-spell-check.el
+.config/emacs/core/init-treemacs.el
+.config/emacs/core/init-try.el
+.config/emacs/core/init-pass.el
+.config/emacs/core/init-magit.el
 
 # StumpWM related
 .config/stumpwm/config:stumpwm
-.config/stumpwm/conf.d/init-modules.lisp:singularity
-.config/stumpwm/conf.d/init-modules.lisp:tanko
 .config/stumpwm/conf.d/userenv.lisp:stumpwm
 .config/stumpwm/conf.d/equake-conf.lisp:stumpwm
 .config/stumpwm/conf.d/autostart.lisp:stumpwm
 .config/stumpwm/conf.d/lisp-server.lisp:stumpwm
 .config/stumpwm/conf.d/keybindings.lisp:stumpwm
-.config/stumpwm/conf.d/customs.lisp:singularity
-.config/stumpwm/conf.d/customs.lisp:tanko
+
+# Linked configuration
+.config/emacs/localhost/init-cl.el:singularity,tanko
 
 # Configuration for the host singularity
 .config/emacs/localhost/profile.el:singularity
-.config/emacs/localhost/init-cl.el:singularity
 .config/emacs/localhost/init-guix.el:singularity
 # .config/emacs/localhost/init-font.el:singularity
+.config/stumpwm/conf.d/init-modules.lisp:singularity
+.config/stumpwm/conf.d/customs.lisp:singularity
 
 # Configuration for the host tanko
-# .config/emacs/tanko/profile.el:tanko
-
-# Configuration for private usage
-# .config/emacs/singularity/roland/profile.el:private
-# .config/emacs/host/roland/profile.el:private
+# .config/emacs/localhost/profile.el:tanko
+# .config/emacs/localhost/init-font.el:tanko
+.config/emacs/localhost/init-org.el:tanko
+.config/emacs/localhost/init-magit.el:tanko
+.config/emacs/localhost/init-ansible.el:tanko
+.config/emacs/localhost/init-dash.el:tanko
+.config/emacs/localhost/init-hydra.el:tanko
+.config/emacs/localhost/init-projectile.el:tanko
+.config/emacs/localhost/init-python.el:tanko
+.config/emacs/localhost/init-skeletor.el:tanko
+.config/emacs/localhost/init-yasnippet.el:tanko
+.config/stumpwm/conf.d/init-modules.lisp:tanko
+.config/stumpwm/conf.d/customs.lisp:tanko
 
 # Configuration for work usage
+# .config/emacs/localhost/profile.el:work
+# .config/emacs/localhost/init-font.el:work

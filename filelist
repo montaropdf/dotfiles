@@ -1,0 +1,21 @@
+# Groups
+singularity=desktop,gaming,private,singularity
+tanko=laptop,org,private,tanko
+
+# Common files
+.emacs
+.config/emacs/core/profile.el
+# .config/emacs/core/init-ivy.el:singularity
+.config/emacs/core/init-theme.el:singularity
+
+# Configuration for the host singularity
+.config/emacs/singularity/profile.el:singularity
+# .config/emacs/singularity/init-font.el:singularity
+# .config/emacs/singularity/init-guix.el:singularity
+# .config/emacs/tanko/profile.el:tanko
+
+# Configuration for private usage
+# .config/emacs/singularity/roland/profile.el:private
+# .config/emacs/tanko/roland/profile.el:private
+
+# Configuration for work usage

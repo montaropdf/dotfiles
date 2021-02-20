@@ -5,8 +5,9 @@ tanko=laptop,org,private,tanko
 # Common files
 .emacs
 .config/emacs/core/profile.el
-# .config/emacs/core/init-ivy.el:singularity
-.config/emacs/core/init-theme.el:singularity
+# .config/emacs/core/init-ivy.el
+.config/emacs/core/init-theme.el
+.config/emacs/core/init-conveniences.el
 
 # Configuration for the host singularity
 .config/emacs/singularity/profile.el:singularity

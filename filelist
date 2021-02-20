@@ -13,6 +13,8 @@ tanko=laptop,org,private,tanko,stumpwm
 .config/stumpwm/config:stumpwm
 .config/stumpwm/conf.d/init-modules.lisp:singularity
 .config/stumpwm/conf.d/init-modules.lisp:tanko
+.config/stumpwm/conf.d/userenv.lisp:stumpwm
+.config/stumpwm/conf.d/equake-conf.lisp:stumpwm
 .config/stumpwm/conf.d/autostart.lisp:stumpwm
 .config/stumpwm/conf.d/lisp-server.lisp:stumpwm
 .config/stumpwm/conf.d/keybindings.lisp:stumpwm

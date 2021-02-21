@@ -8,13 +8,14 @@
 (defvar emacs-configuration-categories-list '())
 
 (defun load-if-exists (f)
-  "Load the file, if it exist and is readable."
+  "Load the file F, if it exist and is readable."
   (when (file-readable-p f) (load-file (expand-file-name f))))
 
 (defun install-package-if-absent (pkg)
+  "Install thepackage PKG, if it is not installed yet."
   (unless (package-installed-p pkg)
-(package-refresh-contents)
-(package-install pkg)))
+    (package-refresh-contents)
+    (package-install pkg)))
 
 (load-if-exists (concat emacs-host-cfg-dir "/proxy.el"))
 
@@ -22,7 +23,7 @@
 (setq package-enable-at-startup nil)
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 (add-to-list 'package-archives '("melpa-stable" . "https://melpa.org/packages/"))
-;; (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 
 (package-initialize)                ;; Initialize & Install Package
 
@@ -32,9 +33,9 @@
 (install-package-if-absent 'f)
 (require 'f)
 
+(setq custom-file (concat emacs-root-cfg-dir "/custom.el"))
+(load-if-exists custom-file)
+
 (load-if-exists (f-expand "profile.el" emacs-core-cfg-dir))
 (load-if-exists (f-expand "profile.el" emacs-host-cfg-dir))
 (load-if-exists (f-expand "profile.el" emacs-user-cfg-dir))
-
-;; (setq custom-file (concat emacs-user-cfg-dir "/custom.el"))
-;; (load-if-exists custom-file)

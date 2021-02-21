@@ -36,21 +36,24 @@ tanko=laptop,org,private,tanko,stumpwm
 .config/emacs/localhost/profile.el:singularity
 .config/emacs/localhost/init-guix.el:singularity
 # .config/emacs/localhost/init-font.el:singularity
+.config/emacs/custom.el:singularity
 .config/stumpwm/conf.d/init-modules.lisp:singularity
 .config/stumpwm/conf.d/customs.lisp:singularity
 
 # Configuration for the host tanko
 # .config/emacs/localhost/profile.el:tanko
 # .config/emacs/localhost/init-font.el:tanko
-.config/emacs/localhost/init-org.el:tanko
-.config/emacs/localhost/init-magit.el:tanko
-.config/emacs/localhost/init-ansible.el:tanko
-.config/emacs/localhost/init-dash.el:tanko
-.config/emacs/localhost/init-hydra.el:tanko
-.config/emacs/localhost/init-projectile.el:tanko
-.config/emacs/localhost/init-python.el:tanko
-.config/emacs/localhost/init-skeletor.el:tanko
-.config/emacs/localhost/init-yasnippet.el:tanko
+# .config/emacs/localhost/init-org.el:tanko
+# .config/emacs/localhost/init-magit.el:tanko
+# .config/emacs/localhost/init-ansible.el:tanko
+# .config/emacs/localhost/init-dash.el:tanko
+# .config/emacs/localhost/init-hydra.el:tanko
+# .config/emacs/localhost/init-projectile.el:tanko
+# .config/emacs/localhost/init-python.el:tanko
+# .config/emacs/localhost/init-skeletor.el:tanko
+# .config/emacs/localhost/init-yasnippet.el:tanko
+.config/emacs/localhost/init-outline.el:tanko
+# .config/emacs/custom.el:tanko
 .config/stumpwm/conf.d/init-modules.lisp:tanko
 .config/stumpwm/conf.d/customs.lisp:tanko
 

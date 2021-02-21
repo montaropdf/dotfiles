@@ -14,9 +14,9 @@
 ;; (use-package unicode-input
 ;;   :ensure t)
 
-(use-package unicode-progress-reporter
-  :ensure t
-  :config (unicode-progress-reporter-setup))
+;; (use-package unicode-progress-reporter
+;;   :ensure t
+;;   :config (unicode-progress-reporter-setup))
 
 (use-package unicode-whitespace
   :ensure t

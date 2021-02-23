@@ -7,7 +7,7 @@
  '(column-number-mode t)
  '(display-time-mode t)
  '(package-selected-packages
-   '(pretty-sha-path guix outlined-elisp-mode magit ivy-pass pass try pretty-hydra treemacs-projectile treemacs flycheck undo-tree counsel window-jump ace-window which-key use-package unidecode unicode-whitespace unicode-progress-reporter unicode-fonts unicode-escape unicode-enbox unicode-emoticons rainbow-delimiters outshine iedit hungry-delete f expand-region doom-themes date2name beacon all-the-icons-ivy all-the-icons-dired aggressive-indent))
+   '(sly-asdf sly-quicklisp sly outline-toc outline-magic pretty-sha-path guix outlined-elisp-mode magit ivy-pass pass try pretty-hydra treemacs-projectile treemacs flycheck undo-tree counsel window-jump ace-window which-key use-package unidecode unicode-whitespace unicode-progress-reporter unicode-fonts unicode-escape unicode-enbox unicode-emoticons rainbow-delimiters outshine iedit hungry-delete f expand-region doom-themes date2name beacon all-the-icons-ivy all-the-icons-dired aggressive-indent))
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(tool-bar-mode nil))

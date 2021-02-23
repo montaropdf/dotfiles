@@ -8,10 +8,12 @@
 
 (use-package sly-quicklisp
   :ensure t
+  :after sly
   :requires sly
   :defer t)
 
 (use-package sly-asdf
   :ensure t
+  :after sly
   :requires sly
   :defer t)

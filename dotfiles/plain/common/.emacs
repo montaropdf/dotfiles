@@ -2,7 +2,7 @@
 
 (defvar emacs-root-cfg-dir (concat (getenv "XDG_CONFIG_HOME") "/emacs/"))
 (defvar emacs-core-cfg-dir (concat emacs-root-cfg-dir "/core/"))
-(defvar emacs-host-cfg-dir (concat emacs-root-cfg-dir "/" (system-name) "/"))
+(defvar emacs-host-cfg-dir (concat emacs-root-cfg-dir "/" "localhost" "/"))
 (defvar emacs-user-cfg-dir (concat emacs-host-cfg-dir "/" (user-login-name) "/"))
 (defvar emacs-configuration-tags-list '())
 (defvar emacs-configuration-categories-list '())

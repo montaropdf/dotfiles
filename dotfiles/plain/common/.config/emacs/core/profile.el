@@ -7,7 +7,7 @@
 (load-if-exists (f-expand "init-ivy.el" emacs-core-cfg-dir))
 (load-if-exists (f-expand "init-undo-tree.el" emacs-core-cfg-dir))
 (load-if-exists (f-expand "init-ibuffer.el" emacs-core-cfg-dir))
-(load-if-exists (f-expand "init-spell-check.el" emacs-core-cfg-dir))
+;; (load-if-exists (f-expand "init-spell-check.el" emacs-core-cfg-dir))
 (load-if-exists (f-expand "init-treemacs.el" emacs-core-cfg-dir))
 (load-if-exists (f-expand "init-hydra.el" emacs-core-cfg-dir))
 (load-if-exists (f-expand "init-try.el" emacs-core-cfg-dir))

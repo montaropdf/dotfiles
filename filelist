@@ -1,6 +1,7 @@
 # Groups
 singularity=desktop,gaming,private,singularity,stumpwm
 tanko=laptop,org,private,tanko,stumpwm
+guix-01=laptop,org,stumpwm,guix-01,work
 
 # Common files
 .emacs
@@ -30,11 +31,12 @@ tanko=laptop,org,private,tanko,stumpwm
 .config/stumpwm/conf.d/keybindings.lisp:stumpwm
 
 # Linked configuration
-.config/emacs/localhost/init-cl.el:singularity,tanko
+.config/emacs/localhost/init-cl.el:singularity,tanko,work
+# .config/emacs/core/init-org.el:tanko,work
 
 # Configuration for the host singularity
 .config/emacs/localhost/profile.el:singularity
-.config/emacs/localhost/init-guix.el:singularity
+.config/emacs/localhost/init-guix.el:singularity,work
 # .config/emacs/localhost/init-font.el:singularity
 .config/emacs/custom.el:singularity
 .config/stumpwm/conf.d/init-modules.lisp:singularity
@@ -43,7 +45,6 @@ tanko=laptop,org,private,tanko,stumpwm
 # Configuration for the host tanko
 # .config/emacs/localhost/profile.el:tanko
 # .config/emacs/localhost/init-font.el:tanko
-# .config/emacs/localhost/init-org.el:tanko
 # .config/emacs/localhost/init-magit.el:tanko
 # .config/emacs/localhost/init-ansible.el:tanko
 # .config/emacs/localhost/init-dash.el:tanko
@@ -60,3 +61,5 @@ tanko=laptop,org,private,tanko,stumpwm
 # Configuration for work usage
 # .config/emacs/localhost/profile.el:work
 # .config/emacs/localhost/init-font.el:work
+.config/stumpwm/conf.d/init-modules.lisp:work
+.config/stumpwm/conf.d/customs.lisp:work

@@ -46,43 +46,7 @@
 ;;     (0 t nil :class "Konqueror" :role "...konqueror-mainwindow")
 ;;   (1 t nil :class "urxvt"))
 
-;; Mode line definition
-(setf *mode-line-foreground-color* "gainsboro")
-(setf *mode-line-background-color* "DeepSkyBlue")
-(setf *mode-line-pad-y* 0)
-(setf *mode-line-pad-x* 0)
-(setf *mode-line-border-color* "Black")
-(setf *time-modeline-string* "%a %Y-%m-%e %k:%M")
-
-(defvar group-item-format "^(:fg MediumSpringGreen)^(:bg black)[%n]")
-(defvar focused-window-item-format "^(:fg gainsboro)^(:bg black)%w")
-(defvar group-window-separator-format "^(:fg OrangeRed)^(:bg black)")
-(defvar left-block-end-separator-format (concat "^(:fg black)^(:bg " *mode-line-background-color* ")"))
-(defvar right-block-begin-separator-format (concat "^(:fg black)^(:bg " *mode-line-background-color* ")"))
-(defvar systray-block-begin-separator-format left-block-end-separator-format)
-(defvar item-separator-format "^(:fg gainsboro)^(:bg black)|")
-;; (defvar systray-block-format "^(:fg gainsboro)^(:bg black)%T")
-(defvar date-time-item-format "^(:fg gainsboro)^(:bg black)%d")
-
-(setf stumpwm:*screen-mode-line-format*
-      (list group-item-format
-            "^n"
-            group-window-separator-format
-            "^n"
-            focused-window-item-format
-            "^n"
-            left-block-end-separator-format
-            "^n"
-            "^>"
-            right-block-begin-separator-format
-            "^n"
-            date-time-item-format
-            "^n"
-;;            systray-block-begin-separator-format
-;;            "^n"
-;;            systray-block-format
-))
-
+(defvar systray-enabled nil)
 
 (setf stumpwm:*message-window-gravity* :bottom-right)
 (setf stumpwm:*input-window-gravity* :center)

@@ -10,50 +10,6 @@
 (undefine-key *root-map* (kbd "C-w"))
 (define-key *root-map* (kbd "C-w") "windowlist")
 
-;; * Defining application key bindings
-;; ** Define application menu
-(defcommand firefox () ()
-            "run firefox"
-            (run-or-raise "firefox" '(:class "Firefox")))
-
-(defcommand mattermost () ()
-            "run mattermost"
-            (run-or-raise "~/programmes/mattermost-desktop-latest/mattermost-desktop" '(:class "Mattermost")))
-
-(defcommand revecloud-web () ()
-            "Open the Proxmox web console of Revecloud"
-            (run-or-raise "firefox -P 'Revecloud'" '(:class "Revecloud")))
-
-
-;; (defcommand toggle-mode-line () () (mode-line))
-
-;; (make-web-jump "google" "firefox http://www.google.fr/search?q=")
-
-(setq *app-menu*
-      '(("INTERNET"
-         ;; submenu
-         ("Firefox" firefox)       ; call stumpwm command
-         ;; ("Skype" "skypeforlinux") ; run shell script
-         )
-        ("COMMS"
-         ("Weechat" "weechat")
-         ("Mattermost" mattermost);; /home/roland/programmes/mattermost-desktop-4.0.1/mattermost-desktop
-         ("Email" "emacsclient -c -e '(mu4e)'")
-         )
-        ("MONITORING"
-         ("Conky" "conky")
-         ("Revecloud Web" revecloud-web))
-        ("ADMINISTRATION"
-         ("Configuration Emacs" "emacsclient -c -e '(dired ~/.personal/)'")
-         ("Configuration StumpWM" "emacsclient -c -e '(dired ~/.config/stumpwm)'")
-         )
-        ("WORK"
-         ("OpenOffice.org"  "openoffice"))
-        ("GRAPHICS"
-         ("GIMP" "gimp")
-         ("Inkscape" "inkscape"))
-        ("Terminal" "alacritty")))
-
 (defvar *my-pass-menu*
   (let ((m (make-sparse-keymap)))
     (define-key m (kbd "c") "pass-copy")
@@ -62,22 +18,8 @@
     m ; NOTE: this is important
     ))
 
-(defvar *my-application-menu*
-  (let ((m (make-sparse-keymap)))
-    (define-key m (kbd "S") "exec steam")
-    (define-key m (kbd "m") "toggle-mode-line current-screen current-head")
-    ;; (define-key m (kbd "c") "exec alacritty -name weechat -e weechat")
-    (define-key m (kbd "d") "exec evince")
-    (define-key m (kbd "e") "colon1 exec emacsclient -c ")
-    (define-key m (kbd "f") "exec firefox -P")
-    (define-key m (kbd "C-s") "colon1 exec alacritty -t ssh -e ssh ")
-    ;; (define-key m (kbd "s") "surfraw")
-    (define-key m (kbd "t") "exec alacritty")
-    ;; (define-key m (kbd "y") "exec alacritty -t youtube-viewer -e 'youtube-viewer -S --player mpv'")
-    (define-key m (kbd "p") '*my-pass-menu*)
-    (define-key m (kbd "s-q") "end-session")
-    m ; NOTE: this is important
-    ))
+;; * Definition of the Main Menu
+(load "~/.config/stumpwm/conf.d/init-root-menu.lisp")
 
 (define-key *top-map* (kbd "s-a") '*my-application-menu*)
 
@@ -87,9 +29,6 @@
 ;; (define-key *root-map* (kbd "C-y") "show-clipboard-history")
 
 (define-key *root-map* (kbd "C-f") "show-menu")
-
-;; Key binding for eQuake
-(define-key *top-map* (kbd "F12") "invoke-equake")
 
 ;; Quick access to groups
 (define-key *top-map* (kbd "s-F1") "gselect 1")

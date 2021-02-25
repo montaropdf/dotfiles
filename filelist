@@ -21,6 +21,7 @@ guix-01=laptop,org,stumpwm,guix-01,work
 .config/emacs/core/init-try.el
 .config/emacs/core/init-pass.el
 .config/emacs/core/init-magit.el
+.config/alacritty/alacritty.yml
 
 # StumpWM related
 .config/stumpwm/config:stumpwm
@@ -28,6 +29,7 @@ guix-01=laptop,org,stumpwm,guix-01,work
 .config/stumpwm/conf.d/equake-conf.lisp:stumpwm
 .config/stumpwm/conf.d/autostart.lisp:stumpwm
 .config/stumpwm/conf.d/lisp-server.lisp:stumpwm
+.config/stumpwm/conf.d/init-modeline.lisp:stumpwm
 .config/stumpwm/conf.d/keybindings.lisp:stumpwm
 
 # Linked configuration
@@ -41,6 +43,7 @@ guix-01=laptop,org,stumpwm,guix-01,work
 .config/emacs/custom.el:singularity
 .config/stumpwm/conf.d/init-modules.lisp:singularity
 .config/stumpwm/conf.d/customs.lisp:singularity
+.config/stumpwm/conf.d/init-root-menu.lisp:singularity
 
 # Configuration for the host tanko
 # .config/emacs/localhost/profile.el:tanko
@@ -63,3 +66,4 @@ guix-01=laptop,org,stumpwm,guix-01,work
 # .config/emacs/localhost/init-font.el:work
 .config/stumpwm/conf.d/init-modules.lisp:work
 .config/stumpwm/conf.d/customs.lisp:work
+.config/stumpwm/conf.d/init-root-menu.lisp:work

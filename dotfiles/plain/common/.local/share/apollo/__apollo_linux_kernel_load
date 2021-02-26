@@ -1,0 +1,33 @@
+#! /bin/zsh
+# -*- mode: sh -*-
+
+__apollo_linux_kernel_cache_key() {
+    __APOLLO_RETURN_MESSAGE="DISTRO_KERNEL"
+}
+
+__apollo_linux_kernel_run() {
+
+    local context mode element kernel_info kernel_version_full show architecture
+
+    context="$1"
+    mode="default"
+    element="version"
+
+    kernel_info=$(</proc/version)
+    kernel_version_full=$kernel_info[(w)3]
+    __apollo_set_style "${context}:${mode}:${element}" "$kernel_version_full[(ws:.:)1,(ws:.:)-3]"
+    kernel_info="${__APOLLO_RETURN_MESSAGE}"
+
+    element="architecture"
+
+    zstyle -b "${context}:${mode}:${element}" show show
+
+    if [[ "${show}" == "yes" ]]
+    then
+	architecture="$kernel_version_full[(ws:.:)-1]"
+	__apollo_set_style "${context}:${mode}:${element}" "$architecture"
+    	kernel_info+="${__APOLLO_RETURN_MESSAGE}"
+    fi
+
+    __APOLLO_RETURN_MESSAGE="$kernel_info"
+}

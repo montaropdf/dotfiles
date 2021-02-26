@@ -1,0 +1,55 @@
+#! /bin/zsh
+# -*- mode: sh -*-
+
+__apollo_sysadmin_cache_key() {
+    __APOLLO_RETURN_MESSAGE="SYSADMIN_COLLECT"
+}
+
+__apollo_sysadmin_async() {
+
+    local context mode element failed nbr_failed service_status monitored inactives style
+
+    context="$1"
+    mode="default"
+    element="systemd"
+    services_status=""
+
+    zstyle -a "${context}:${mode}:${element}" elements monitored
+
+    failed=($(systemctl --failed --no-legend --no-pager | cut -d ' ' -f 1))
+    inactives=($(systemctl --state=inactive --no-legend --no-pager --all | cut -d ' ' -f 1))
+    nbr_failed="${#failed[@]}"
+    nbr_inactives="${#inactives[@]}"
+
+    if [[ "${#monitored[@]}" -gt 0 ]]
+    then
+    	for service in "${(w)monitored[@]}"
+    	do
+    	    if [[ "${failed[(i)${service}.service]}" -lt "${nbr_failed}" ]]
+    	    then
+    		mode="failed"
+    	    elif [[ "${inactives[(i)${service}.service]}" -lt "${nbr_inactives}" ]]
+	    then
+    	    	mode="inactive"
+    	    else
+    		mode="default"
+    	    fi
+
+    	    __apollo_set_style "${context}:${mode}:${element}" --dynamic
+    	    style=("${(s.\0.)__APOLLO_RETURN_MESSAGE}")
+    	    services_status+="${style[1]}${service}${style[2]}"
+    	done
+
+    	mode="failed"
+    	__apollo_set_style "${context}:${mode}:${element}" --dynamic
+    	style=("${(s.\0.)__APOLLO_RETURN_MESSAGE}")
+    	services_status+="${style[1]}${nbr_failed}${style[2]}"
+    else
+    	mode="failed"
+    	__apollo_set_style "${context}:${mode}:${element}" --dynamic
+    	style=("${(s.\0.)__APOLLO_RETURN_MESSAGE}")
+    	services_status="${style[1]}${nbr_failed}${style[2]}"
+    fi
+
+    __APOLLO_RETURN_MESSAGE="$services_status"
+}

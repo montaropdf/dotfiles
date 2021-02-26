@@ -1,0 +1,28 @@
+#! /bin/zsh
+# -*- mode: sh -*-
+
+__apollo_linux_distro_cache_key() {
+    __APOLLO_RETURN_MESSAGE="DISTRO_INFO"
+}
+
+__apollo_linux_distro_run() {
+
+    source /etc/os-release
+
+    case $ID in
+	(fedora) distro_logo="" #""
+		 ;;
+	(rhel) distro_logo=""
+	       ;;
+	(gentoo) distro_logo=""
+		 ;;
+	(centos) distro_logo=""
+		 ;;
+	(debian) distro_logo=""
+		 ;;
+	(*) distro_logo=" $ID"
+	    ;;
+    esac
+
+    __APOLLO_RETURN_MESSAGE="$distro_logo $VERSION_ID"
+}

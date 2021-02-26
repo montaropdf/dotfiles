@@ -22,6 +22,16 @@ guix-01=laptop,org,stumpwm,guix-01,work
 .config/emacs/core/init-pass.el
 .config/emacs/core/init-magit.el
 .config/alacritty/alacritty.yml
+.config/nyxt/init.lisp
+.zshrc
+.config/apollo/revecloud-admin.conf
+.config/apollo/revecloud-dev.conf
+.config/apollo/revecloud.conf
+.config/apollo/scrollback.revecloud.conf
+.local/share/apollo/__apollo_linux_distro_load
+.local/share/apollo/__apollo_linux_kernel_load
+.local/share/apollo/__apollo_sysadmin_load
+
 
 # StumpWM related
 .config/stumpwm/config:stumpwm

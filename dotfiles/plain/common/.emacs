@@ -34,8 +34,9 @@
 (require 'f)
 
 (setq custom-file (concat emacs-root-cfg-dir "/custom.el"))
-(load-if-exists custom-file)
 
 (load-if-exists (f-expand "profile.el" emacs-core-cfg-dir))
 (load-if-exists (f-expand "profile.el" emacs-host-cfg-dir))
 (load-if-exists (f-expand "profile.el" emacs-user-cfg-dir))
+
+(load-if-exists custom-file)

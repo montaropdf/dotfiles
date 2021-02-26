@@ -7,7 +7,13 @@ __apollo_linux_distro_cache_key() {
 
 __apollo_linux_distro_run() {
 
-    source /etc/os-release
+    if [ -e /etc/os-release ]
+    then
+	source /etc/os-release
+    else
+	if [ -d /gnu/store ]
+	   ID="GuixSD"
+	fi
 
     case $ID in
 	(fedora) distro_logo="" #""

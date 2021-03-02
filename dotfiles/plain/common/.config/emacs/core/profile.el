@@ -5,6 +5,7 @@
 			"init-outshine.el"
 			"init-winnav.el"
 			"init-ivy.el"
+			"init-company.el"
 			"init-undo-tree.el"
 			"init-ibuffer.el"
 			;; "init-spell-check.el"

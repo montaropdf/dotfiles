@@ -21,6 +21,7 @@ guix-01=laptop,org,stumpwm,guix-01,work
 .config/emacs/core/init-try.el
 .config/emacs/core/init-pass.el
 .config/emacs/core/init-magit.el
+.config/emacs/core/init-company.el
 .config/alacritty/alacritty.yml
 .config/nyxt/init.lisp
 .zshrc
@@ -32,6 +33,7 @@ guix-01=laptop,org,stumpwm,guix-01,work
 .local/share/apollo/__apollo_linux_kernel_load
 .local/share/apollo/__apollo_sysadmin_load
 .local/bin/toggle-proxy
+.gnupg/gpg-agent.conf
 
 # StumpWM related
 .config/stumpwm/config:stumpwm
@@ -74,6 +76,13 @@ guix-01=laptop,org,stumpwm,guix-01,work
 # Configuration for work usage
 .config/emacs/localhost/profile.el:work
 .config/emacs/localhost/init-font.el:work
+.config/emacs/localhost/init-web.el:work
+.config/emacs/localhost/init-ansible.el:work
+.config/emacs/localhost/init-elisp.el:work
+.config/emacs/localhost/init-file-support.el:work
+.config/emacs/localhost/setup-support-tools.el:work
+.config/emacs/localhost/init-dev.el:work
+.config/emacs/localhost/init-python.el:work
 .config/stumpwm/conf.d/init-modules.lisp:work
 .config/stumpwm/conf.d/customs.lisp:work
 .config/stumpwm/conf.d/init-root-menu.lisp:work

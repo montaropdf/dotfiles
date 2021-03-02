@@ -73,7 +73,7 @@ guix-01=laptop,org,stumpwm,guix-01,work
 
 # Configuration for work usage
 .config/emacs/localhost/profile.el:work
-# .config/emacs/localhost/init-font.el:work
+.config/emacs/localhost/init-font.el:work
 .config/stumpwm/conf.d/init-modules.lisp:work
 .config/stumpwm/conf.d/customs.lisp:work
 .config/stumpwm/conf.d/init-root-menu.lisp:work

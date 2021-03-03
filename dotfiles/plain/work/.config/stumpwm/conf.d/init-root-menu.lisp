@@ -12,6 +12,7 @@
   (let ((m (make-sparse-keymap)))
     (define-key m (kbd "d") "exec evince")
     (define-key m (kbd "e") "colon1 exec emacsclient -c ")
+    (define-key m (kbd "E") "exec emacs")
     (define-key m (kbd "f") "nyxt")
     (define-key m (kbd "t") "exec alacritty")
     (define-key m (kbd "p") '*my-pass-menu*)

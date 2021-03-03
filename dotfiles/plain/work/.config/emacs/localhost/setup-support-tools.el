@@ -1,3 +1,9 @@
+(setq abbrev-file-name (f-expand "abbrev_defs" emacs-user-data-dir))
+
+(setq-default abbrev-mode t)
+
+(setq bookmark-default-file (f-expand "bookmarks" emacs-user-data-dir))
+
 (use-package ipcalc
   :ensure t
   :defer t)
@@ -15,7 +21,3 @@
 (use-package pcre2el
   :ensure t
   :config (pcre-mode))
-
-(setq abbrev-file-name (f-expand "emacs-smals/.abbrev_defs" repos-dir))
-
-(setq-default abbrev-mode t)

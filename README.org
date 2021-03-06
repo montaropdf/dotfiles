@@ -1,0 +1,5 @@
+#+TITLE: README
+
+Personal applications configuration, for my machines.
+
+The configuration is split, between the hosts, using the dotgit tool.

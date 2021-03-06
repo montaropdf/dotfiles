@@ -70,8 +70,8 @@ guix-01=laptop,org,stumpwm,guix-01,work
 # .config/emacs/localhost/init-yasnippet.el:tanko
 .config/emacs/localhost/init-outline.el:tanko
 # .config/emacs/custom.el:tanko
-.config/stumpwm/conf.d/init-modules.lisp:tanko
-.config/stumpwm/conf.d/customs.lisp:tanko
+# .config/stumpwm/conf.d/init-modules.lisp:tanko
+# .config/stumpwm/conf.d/customs.lisp:tanko
 
 # Configuration for work usage
 .config/emacs/localhost/profile.el:work

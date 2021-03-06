@@ -1,7 +1,7 @@
 # Groups
-singularity=desktop,gaming,private,singularity,stumpwm
+singularity=desktop,gaming,private,singularity,stumpwm,guix
 tanko=laptop,org,private,tanko,stumpwm
-guix-01=laptop,org,stumpwm,guix-01,work
+guix-01=laptop,org,stumpwm,guix-01,work,guix
 
 # Common files
 .emacs
@@ -39,7 +39,7 @@ guix-01=laptop,org,stumpwm,guix-01,work
 .config/stumpwm/config:stumpwm
 .config/stumpwm/conf.d/userenv.lisp:stumpwm
 .config/stumpwm/conf.d/equake-conf.lisp:stumpwm
-.config/stumpwm/conf.d/lisp-server.lisp:stumpwm
+.config/stumpwm/conf.d/lisp-server.lisp:guix
 .config/stumpwm/conf.d/init-modeline.lisp:stumpwm
 .config/stumpwm/conf.d/keybindings.lisp:stumpwm
 
@@ -47,7 +47,6 @@ guix-01=laptop,org,stumpwm,guix-01,work
 .config/emacs/localhost/init-cl.el:singularity,tanko,work
 .config/emacs/localhost/init-guix.el:singularity,work
 # .config/emacs/core/init-org.el:tanko,work
-.config/stumpwm/conf.d/autostart.lisp:tanko,singularity
 
 # Configuration for the host singularity
 .config/emacs/localhost/profile.el:singularity
@@ -56,6 +55,7 @@ guix-01=laptop,org,stumpwm,guix-01,work
 .config/stumpwm/conf.d/init-modules.lisp:singularity
 .config/stumpwm/conf.d/customs.lisp:singularity
 .config/stumpwm/conf.d/init-root-menu.lisp:singularity
+.config/stumpwm/conf.d/autostart.lisp:singularity
 
 # Configuration for the host tanko
 # .config/emacs/localhost/profile.el:tanko
@@ -70,8 +70,11 @@ guix-01=laptop,org,stumpwm,guix-01,work
 # .config/emacs/localhost/init-yasnippet.el:tanko
 .config/emacs/localhost/init-outline.el:tanko
 # .config/emacs/custom.el:tanko
-# .config/stumpwm/conf.d/init-modules.lisp:tanko
+.config/stumpwm/conf.d/init-modules.lisp:tanko
 # .config/stumpwm/conf.d/customs.lisp:tanko
+.config/stumpwm/conf.d/lisp-server.lisp:tanko
+.config/stumpwm/conf.d/init-root-menu.lisp:tanko
+.config/stumpwm/conf.d/autostart.lisp:tanko
 
 # Configuration for work usage
 .config/emacs/localhost/profile.el:work

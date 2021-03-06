@@ -114,7 +114,10 @@ zinit light mjrafferty/apollo-zsh-theme
 
 APOLLO_THEME=revecloud-dev
 
-for ressource in $(ls $HOME/.config/shell/*.zsh)
-do
-    source ${ressource}
-done
+if [ -d  $HOME/.config/shell ]
+then
+    for ressource in $(ls $HOME/.config/shell/*.zsh)
+    do
+	source ${ressource}
+    done
+fi

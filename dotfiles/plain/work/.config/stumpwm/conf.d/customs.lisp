@@ -16,7 +16,6 @@
      (substitute #\+ #\Space search)
      (run-shell-command (concatenate 'string ,prefix search))))
 
-
 ;; Message window font
 (load-module "ttf-fonts")
 ;; ;; Next line to be used when fonts gets updated
@@ -46,7 +45,7 @@
 ;;     (0 t nil :class "Konqueror" :role "...konqueror-mainwindow")
 ;;   (1 t nil :class "urxvt"))
 
-(defvar systray-enabled nil)
+(defvar systray-enabled t)
 
 (setf stumpwm:*message-window-gravity* :bottom-right)
 (setf stumpwm:*input-window-gravity* :center)

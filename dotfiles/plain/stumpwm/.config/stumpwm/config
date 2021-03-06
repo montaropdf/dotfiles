@@ -3,9 +3,6 @@
 (in-package :stumpwm)
 
 ;; * Adding modules
-;; (set-module-dir "~/codes/3rdparty/stumpwm-contrib")
-;; (set-module-dir "~/.guix-profile/share/common-lisp/sbcl")
-
 (load "~/.config/stumpwm/conf.d/init-modules")
 
 ;; LOAD PRIVATE PRE-CONFIG FILES HERE
@@ -17,14 +14,10 @@
 (load "~/.config/stumpwm/conf.d/init-modeline")
 ;; (load "~/.config/stumpwm/conf.d/equake-conf")
 (load "~/.config/stumpwm/conf.d/keybindings")
-;; (load "~/.config/stumpwm/conf.d/autostart")
+(load "~/.config/stumpwm/conf.d/autostart")
 
-(toggle-mode-line (current-screen)
-                  (current-head))
-
-;; (mode-line)
-;; (stumptray::add-mode-line-hooks)
-;; (stumptray::stumptray)
+(mode-line)
+(stumptray::add-mode-line-hooks)
 
 ;; LOAD PRIVATE POST-CONFIG FILES HERE
 ;; --------------------------------

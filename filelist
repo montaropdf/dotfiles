@@ -39,7 +39,6 @@ guix-01=laptop,org,stumpwm,guix-01,work
 .config/stumpwm/config:stumpwm
 .config/stumpwm/conf.d/userenv.lisp:stumpwm
 .config/stumpwm/conf.d/equake-conf.lisp:stumpwm
-.config/stumpwm/conf.d/autostart.lisp:stumpwm
 .config/stumpwm/conf.d/lisp-server.lisp:stumpwm
 .config/stumpwm/conf.d/init-modeline.lisp:stumpwm
 .config/stumpwm/conf.d/keybindings.lisp:stumpwm
@@ -48,6 +47,7 @@ guix-01=laptop,org,stumpwm,guix-01,work
 .config/emacs/localhost/init-cl.el:singularity,tanko,work
 .config/emacs/localhost/init-guix.el:singularity,work
 # .config/emacs/core/init-org.el:tanko,work
+.config/stumpwm/conf.d/autostart.lisp:tanko,singularity
 
 # Configuration for the host singularity
 .config/emacs/localhost/profile.el:singularity
@@ -86,3 +86,4 @@ guix-01=laptop,org,stumpwm,guix-01,work
 .config/stumpwm/conf.d/init-modules.lisp:work
 .config/stumpwm/conf.d/customs.lisp:work
 .config/stumpwm/conf.d/init-root-menu.lisp:work
+.config/stumpwm/conf.d/autostart.lisp:work

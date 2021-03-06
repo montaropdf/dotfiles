@@ -44,21 +44,21 @@
 		    systray-block-format))))
 
 
-(setf stumpwm:*screen-mode-line-format*
-      (list group-item-format
-            "^n"
-            group-window-separator-format
-            "^n"
-            focused-window-item-format
-            "^n"
-            left-block-end-separator-format
-            "^n"
-            "^>"
-            right-block-begin-separator-format
-            "^n"
-            date-time-item-format
-            "^n"
-;;            systray-block-begin-separator-format
-;;            "^n"
-;;            systray-block-format
-))
+;; (setf stumpwm:*screen-mode-line-format*
+;;       (list group-item-format
+;;             "^n"
+;;             group-window-separator-format
+;;             "^n"
+;;             focused-window-item-format
+;;             "^n"
+;;             left-block-end-separator-format
+;;             "^n"
+;;             "^>"
+;;             right-block-begin-separator-format
+;;             "^n"
+;;             date-time-item-format
+;;             "^n"
+;; ;;            systray-block-begin-separator-format
+;; ;;            "^n"
+;; ;;            systray-block-format
+;; ))

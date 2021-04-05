@@ -134,3 +134,10 @@
           (lambda ()
             (define-key LaTeX-mode-map "\C-xn"
               nil)))
+
+(setq epa-pinentry-mode 'loopback)
+
+(use-package pinentry
+  :ensure t)
+
+(pinentry-start)

@@ -1,7 +1,7 @@
 # Groups
-singularity=desktop,gaming,private,singularity,stumpwm
+singularity=desktop,gaming,private,singularity,stumpwm,guix
 tanko=laptop,org,private,tanko,stumpwm
-guix-01=laptop,org,stumpwm,guix-01,work
+guix-01=laptop,org,stumpwm,guix-01,work,guix
 
 # Common files
 .emacs
@@ -21,6 +21,7 @@ guix-01=laptop,org,stumpwm,guix-01,work
 .config/emacs/core/init-try.el
 .config/emacs/core/init-pass.el
 .config/emacs/core/init-magit.el
+.config/emacs/core/init-company.el
 .config/alacritty/alacritty.yml
 .config/nyxt/init.lisp
 .zshrc
@@ -31,29 +32,30 @@ guix-01=laptop,org,stumpwm,guix-01,work
 .local/share/apollo/__apollo_linux_distro_load
 .local/share/apollo/__apollo_linux_kernel_load
 .local/share/apollo/__apollo_sysadmin_load
-
+.local/bin/toggle-proxy
+.gnupg/gpg-agent.conf
 
 # StumpWM related
 .config/stumpwm/config:stumpwm
 .config/stumpwm/conf.d/userenv.lisp:stumpwm
 .config/stumpwm/conf.d/equake-conf.lisp:stumpwm
-.config/stumpwm/conf.d/autostart.lisp:stumpwm
-.config/stumpwm/conf.d/lisp-server.lisp:stumpwm
+.config/stumpwm/conf.d/lisp-server.lisp:guix
 .config/stumpwm/conf.d/init-modeline.lisp:stumpwm
 .config/stumpwm/conf.d/keybindings.lisp:stumpwm
 
 # Linked configuration
 .config/emacs/localhost/init-cl.el:singularity,tanko,work
+.config/emacs/localhost/init-guix.el:singularity,work
 # .config/emacs/core/init-org.el:tanko,work
 
 # Configuration for the host singularity
 .config/emacs/localhost/profile.el:singularity
-.config/emacs/localhost/init-guix.el:singularity,work
 # .config/emacs/localhost/init-font.el:singularity
 .config/emacs/custom.el:singularity
 .config/stumpwm/conf.d/init-modules.lisp:singularity
 .config/stumpwm/conf.d/customs.lisp:singularity
 .config/stumpwm/conf.d/init-root-menu.lisp:singularity
+.config/stumpwm/conf.d/autostart.lisp:singularity
 
 # Configuration for the host tanko
 # .config/emacs/localhost/profile.el:tanko
@@ -69,11 +71,22 @@ guix-01=laptop,org,stumpwm,guix-01,work
 .config/emacs/localhost/init-outline.el:tanko
 # .config/emacs/custom.el:tanko
 .config/stumpwm/conf.d/init-modules.lisp:tanko
-.config/stumpwm/conf.d/customs.lisp:tanko
+# .config/stumpwm/conf.d/customs.lisp:tanko
+.config/stumpwm/conf.d/lisp-server.lisp:tanko
+.config/stumpwm/conf.d/init-root-menu.lisp:tanko
+.config/stumpwm/conf.d/autostart.lisp:tanko
 
 # Configuration for work usage
-# .config/emacs/localhost/profile.el:work
-# .config/emacs/localhost/init-font.el:work
+.config/emacs/localhost/profile.el:work
+.config/emacs/localhost/init-font.el:work
+.config/emacs/localhost/init-web.el:work
+.config/emacs/localhost/init-ansible.el:work
+.config/emacs/localhost/init-elisp.el:work
+.config/emacs/localhost/init-file-support.el:work
+.config/emacs/localhost/setup-support-tools.el:work
+.config/emacs/localhost/init-dev.el:work
+.config/emacs/localhost/init-python.el:work
 .config/stumpwm/conf.d/init-modules.lisp:work
 .config/stumpwm/conf.d/customs.lisp:work
 .config/stumpwm/conf.d/init-root-menu.lisp:work
+.config/stumpwm/conf.d/autostart.lisp:work

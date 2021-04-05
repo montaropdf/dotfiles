@@ -1,0 +1,11 @@
+#! /run/current-system/profile/bin/env zsh
+
+if [ -z http_proxy ] || [ -z https_proxy ]
+then
+    source ~/.config/shell/proxy.zsh
+    echo "Proxy enabled."
+else
+    export http_proxy=
+    export https_proxy=
+    echo "Proxy disabled."
+fi

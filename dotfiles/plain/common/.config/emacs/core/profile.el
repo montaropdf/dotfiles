@@ -1,17 +1,20 @@
-(load-if-exists (f-expand "init-conveniences.el" emacs-core-cfg-dir))
-(load-if-exists (f-expand "init-unicode.el" emacs-core-cfg-dir))
-(load-if-exists (f-expand "init-theme.el" emacs-core-cfg-dir))
-(load-if-exists (f-expand "init-which-key.el" emacs-core-cfg-dir))
-(load-if-exists (f-expand "init-outshine.el" emacs-core-cfg-dir))
-(load-if-exists (f-expand "init-winnav.el" emacs-core-cfg-dir))
-(load-if-exists (f-expand "init-ivy.el" emacs-core-cfg-dir))
-(load-if-exists (f-expand "init-undo-tree.el" emacs-core-cfg-dir))
-(load-if-exists (f-expand "init-ibuffer.el" emacs-core-cfg-dir))
-;; (load-if-exists (f-expand "init-spell-check.el" emacs-core-cfg-dir))
-(load-if-exists (f-expand "init-treemacs.el" emacs-core-cfg-dir))
-(load-if-exists (f-expand "init-hydra.el" emacs-core-cfg-dir))
-(load-if-exists (f-expand "init-try.el" emacs-core-cfg-dir))
-(load-if-exists (f-expand "init-pass.el" emacs-core-cfg-dir))
-(load-if-exists (f-expand "init-magit.el" emacs-core-cfg-dir))
-(load-if-exists (f-expand "init-regex.el" emacs-core-cfg-dir))
-(load-if-exists (f-expand "init-pass.el" emacs-core-cfg-dir))
+(let ((init-file-list '("init-conveniences.el"
+			"init-unicode.el"
+			"init-theme.el"
+			"init-which-key.el"
+			"init-outshine.el"
+			"init-winnav.el"
+			"init-ivy.el"
+			"init-company.el"
+			"init-undo-tree.el"
+			"init-ibuffer.el"
+			;; "init-spell-check.el"
+			"init-treemacs.el"
+			"init-hydra.el"
+			"init-try.el"
+			"init-pass.el"
+			"init-magit.el"
+			"init-regex.el"
+			"init-pass.el")))
+  (dolist (init-file init-file-list)
+    (load-if-exists (f-expand init-file emacs-core-cfg-dir))))

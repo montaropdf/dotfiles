@@ -36,29 +36,9 @@
             date-time-item-format
             "^n"))
 
-(if (and (boundp systray-enabled) systray-enabled)
+(if (and (boundp 'systray-enabled) systray-enabled)
     (setf stumpwm:*screen-mode-line-format*
 	  (append stumpwm:*screen-mode-line-format*
 		  '(systray-block-begin-separator-format
 		    "^n"
 		    systray-block-format))))
-
-
-(setf stumpwm:*screen-mode-line-format*
-      (list group-item-format
-            "^n"
-            group-window-separator-format
-            "^n"
-            focused-window-item-format
-            "^n"
-            left-block-end-separator-format
-            "^n"
-            "^>"
-            right-block-begin-separator-format
-            "^n"
-            date-time-item-format
-            "^n"
-;;            systray-block-begin-separator-format
-;;            "^n"
-;;            systray-block-format
-))

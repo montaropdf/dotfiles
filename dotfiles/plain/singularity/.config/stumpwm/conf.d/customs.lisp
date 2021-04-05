@@ -55,48 +55,8 @@
 ;;     (0 nil t :create t :class "Mattermost")
 ;;   (1 t nil :title "...weechat"))
 
-;; (define-frame-preference "F5-Monitor"
-;;     (0 nil t :create t :class "Conky")
-;;   (1 t nil :class "conky-manager"))
-
 (define-frame-preference "F4-Gaming"
     (0 nil t :create t :class "steam.steam"))
-
-;; Mode line definition
-(setf *mode-line-foreground-color* "gainsboro")
-(setf *mode-line-background-color* "DeepSkyBlue")
-(setf *mode-line-pad-y* 0)
-(setf *mode-line-pad-x* 0)
-(setf *mode-line-border-color* "Black")
-(setf *time-modeline-string* "%a %Y-%m-%e %k:%M")
-
-(defvar group-item-format "^(:fg MediumSpringGreen)^(:bg black)[%n]")
-(defvar focused-window-item-format "^(:fg gainsboro)^(:bg black)%w")
-(defvar group-window-separator-format "^(:fg OrangeRed)^(:bg black)>>")
-(defvar left-block-end-separator-format "^(:fg gainsboro)^(:bg black)|*\\")
-(defvar right-block-begin-separator-format "^(:fg gainsboro)^(:bg black)/*|")
-(defvar systray-block-begin-separator-format left-block-end-separator-format)
-(defvar item-separator-format "^(:fg gainsboro)^(:bg black)|")
-(defvar systray-block-format "^(:fg gainsboro)^(:bg black)%T")
-(defvar date-time-item-format "^(:fg gainsboro)^(:bg black)%d")
-
-(setf stumpwm:*screen-mode-line-format*
-      (list group-item-format
-            "^n"
-            group-window-separator-format
-            "^n"
-            focused-window-item-format
-            "^n"
-            left-block-end-separator-format
-            "^n"
-            "^>"
-            right-block-begin-separator-format
-            "^n"
-            date-time-item-format
-            "^n"
-            systray-block-begin-separator-format
-            "^n"
-            systray-block-format))
 
 ;; * StumpWM Menu tests
 ;; (defvar *reve-test-menu* '((("element 1" "emacs --daemon=cyber-daemon -Q && emacsclient -e '(load-file \"~/.emacs.d/equake.el\")' -s 'cyber-daemon'")
@@ -112,7 +72,6 @@
 
 (setf *normal-border-width* 6)
 (setf *window-border-style* :TIGHT)
-
 
 ;; Set the mouse focus policy to :ignore
 (setf *mouse-focus-policy* :ignore) ;; otherwise Equake will tend to disappear

@@ -2,7 +2,7 @@
 ;;
 (in-package :stumpwm)
 
-;; (set-module-dir "~/.guix-profile/share/common-lisp/sbcl")
+(set-module-dir "~/.guix-profile/share/common-lisp/sbcl")
 ;; (add-to-load-path "~/.guix-profile/share/common-lisp/sbcl/clx-xembed")
 ;; (add-to-load-path "~/.guix-profile/share/common-lisp/sbcl/stumpwm-stumptray")
 ;; (add-to-load-path "~/.guix-profile/share/common-lisp/sbcl/stumpwm-pass")

@@ -1,1 +1,1 @@
-../../../../singularity/.config/emacs/localhost/init-guix.el
+../../../../guix/.config/emacs/localhost/init-guix.el

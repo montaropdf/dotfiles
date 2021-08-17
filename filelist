@@ -2,6 +2,7 @@
 singularity=desktop,gaming,private,singularity,stumpwm,guix
 tanko=laptop,org,private,tanko,stumpwm
 guix-01=laptop,org,stumpwm,guix-01,work,guix
+dark-dwarf=server,guix,stumpwm,dark-dwarf
 
 # Common files
 .emacs
@@ -45,7 +46,7 @@ guix-01=laptop,org,stumpwm,guix-01,work,guix
 
 # Linked configuration
 .config/emacs/localhost/init-cl.el:singularity,tanko,work
-.config/emacs/localhost/init-guix.el:singularity,work
+.config/emacs/localhost/init-guix.el:work,guix
 # .config/emacs/core/init-org.el:tanko,work
 
 # Configuration for the host singularity
@@ -90,3 +91,12 @@ guix-01=laptop,org,stumpwm,guix-01,work,guix
 .config/stumpwm/conf.d/customs.lisp:work
 .config/stumpwm/conf.d/init-root-menu.lisp:work
 .config/stumpwm/conf.d/autostart.lisp:work
+
+# Configuration for the host dark-dwarf
+.config/emacs/localhost/profile.el:dark-dwarf
+.config/emacs/localhost/init-font.el:dark-dwarf
+.config/emacs/custom.el:dark-dwarf
+.config/stumpwm/conf.d/init-modules.lisp:dark-dwarf
+.config/stumpwm/conf.d/customs.lisp:dark-dwarf
+.config/stumpwm/conf.d/init-root-menu.lisp:dark-dwarf
+.config/stumpwm/conf.d/autostart.lisp:dark-dwarf

@@ -50,7 +50,7 @@ guix-01=laptop,org,stumpwm,guix-01,work,guix
 
 # Configuration for the host singularity
 .config/emacs/localhost/profile.el:singularity
-# .config/emacs/localhost/init-font.el:singularity
+.config/emacs/localhost/init-font.el:singularity
 .config/emacs/custom.el:singularity
 .config/stumpwm/conf.d/init-modules.lisp:singularity
 .config/stumpwm/conf.d/customs.lisp:singularity

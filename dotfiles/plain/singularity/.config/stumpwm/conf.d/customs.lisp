@@ -17,7 +17,7 @@
 
 
 ;; Message window font
-;; (load-module "ttf-fonts")
+(load-module "ttf-fonts")
 ;; ;; Next line to be used when fonts gets updated
 ;; (setf xft:*font-dirs* (list (concat (getenv "HOME") "/.guix-profile/share/fonts/")
 ;; 			    (concat (getenv "HOME") "/.fonts/")))
@@ -27,6 +27,11 @@
 
 ;; (set-font (make-instance 'xft:font :family "DejaVu Sans Mono" :subfamily "Book" :size 14))
 ;; ;; (set-font (make-instance 'xft:font :family "DejaVu Sans Mono Nerd Font" :subfamily "Book" :size 14))
+(setq xft:*font-dirs* (append xft:*font-dirs* (list "~/.local/share/fonts/" "/.guix-profile/share/fonts/")))
+(setf clx-truetype:+font-cache-filename+ (concat (getenv "HOME") "/.local/share/fonts/font-cache.sexp"))
+(xft:cache-fonts)
+
+(set-font (make-instance 'xft:font :family "DejaVuSansMono Nerd Font Mono" :subfamily "Book" :size 14))
 
 ;; * Defining groups
 (gnew "F2-Comms")
@@ -57,6 +62,10 @@
 
 (define-frame-preference "F4-Gaming"
     (0 nil t :create t :class "steam.steam"))
+
+(define-frame-preference "F2-Comms"
+    (0 nil t :create t :class "whalebird.whalebird")
+(1 nil t :create t :class "element.element"))
 
 ;; * StumpWM Menu tests
 ;; (defvar *reve-test-menu* '((("element 1" "emacs --daemon=cyber-daemon -Q && emacsclient -e '(load-file \"~/.emacs.d/equake.el\")' -s 'cyber-daemon'")

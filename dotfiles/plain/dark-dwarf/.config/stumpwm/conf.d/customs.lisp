@@ -31,7 +31,7 @@
 (setf clx-truetype:+font-cache-filename+ (concat (getenv "HOME") "/.local/share/fonts/font-cache.sexp"))
 (xft:cache-fonts)
 
-(set-font (make-instance 'xft:font :family "DejaVuSansMono Nerd Font Mono" :subfamily "Book" :size 14))
+(set-font (make-instance 'xft:font :family "DejaVuSansMono Nerd Font Mono" :subfamily "Book" :size 16))
 
 ;; * Defining groups
 (gnew "F2-Comms")

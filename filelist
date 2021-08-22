@@ -2,7 +2,7 @@
 singularity=desktop,gaming,private,singularity,stumpwm,guix
 tanko=laptop,org,private,tanko,stumpwm
 guix-01=laptop,org,stumpwm,guix-01,work,guix
-dark-dwarf=server,guix,stumpwm,dark-dwarf
+dark-dwarf=server,dark-dwarf,guix,stumpwm
 
 # Common files
 .emacs
@@ -41,7 +41,7 @@ dark-dwarf=server,guix,stumpwm,dark-dwarf
 .config/stumpwm/conf.d/userenv.lisp:stumpwm
 .config/stumpwm/conf.d/equake-conf.lisp:stumpwm
 .config/stumpwm/conf.d/lisp-server.lisp:guix
-.config/stumpwm/conf.d/init-modeline.lisp:stumpwm
+.config/stumpwm/conf.d/init-modeline.lisp:laptop,desktop
 .config/stumpwm/conf.d/keybindings.lisp:stumpwm
 
 # Linked configuration
@@ -97,6 +97,7 @@ dark-dwarf=server,guix,stumpwm,dark-dwarf
 .config/emacs/localhost/init-font.el:dark-dwarf
 .config/emacs/custom.el:dark-dwarf
 .config/stumpwm/conf.d/init-modules.lisp:dark-dwarf
+.config/stumpwm/conf.d/init-modeline.lisp:dark-dwarf
 .config/stumpwm/conf.d/customs.lisp:dark-dwarf
 .config/stumpwm/conf.d/init-root-menu.lisp:dark-dwarf
 .config/stumpwm/conf.d/autostart.lisp:dark-dwarf

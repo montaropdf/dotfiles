@@ -1,6 +1,7 @@
 # Groups
 singularity=desktop,gaming,private,singularity,stumpwm,guix
-tanko=laptop,org,private,tanko,stumpwm
+# tanko=laptop,org,private,tanko,stumpwm
+tanko=laptop,org,private,work
 guix-01=laptop,org,stumpwm,guix-01,work,guix
 dark-dwarf=server,dark-dwarf,guix,stumpwm
 
@@ -25,15 +26,15 @@ dark-dwarf=server,dark-dwarf,guix,stumpwm
 .config/emacs/core/init-company.el
 .config/alacritty/alacritty.yml
 .config/nyxt/init.lisp
-.zshrc
-.config/apollo/revecloud-admin.conf
-.config/apollo/revecloud-dev.conf
-.config/apollo/revecloud.conf
-.config/apollo/scrollback.revecloud.conf
-.local/share/apollo/__apollo_linux_distro_load
-.local/share/apollo/__apollo_linux_kernel_load
-.local/share/apollo/__apollo_sysadmin_load
-.local/bin/toggle-proxy
+# .zshrc
+# .config/apollo/revecloud-admin.conf
+# .config/apollo/revecloud-dev.conf
+# .config/apollo/revecloud.conf
+# .config/apollo/scrollback.revecloud.conf
+# .local/share/apollo/__apollo_linux_distro_load
+# .local/share/apollo/__apollo_linux_kernel_load
+# .local/share/apollo/__apollo_sysadmin_load
+# .local/bin/toggle-proxy
 .gnupg/gpg-agent.conf
 
 # StumpWM related
@@ -69,13 +70,13 @@ dark-dwarf=server,dark-dwarf,guix,stumpwm
 # .config/emacs/localhost/init-python.el:tanko
 # .config/emacs/localhost/init-skeletor.el:tanko
 # .config/emacs/localhost/init-yasnippet.el:tanko
-.config/emacs/localhost/init-outline.el:tanko
+# .config/emacs/localhost/init-outline.el:tanko
 # .config/emacs/custom.el:tanko
-.config/stumpwm/conf.d/init-modules.lisp:tanko
+# .config/stumpwm/conf.d/init-modules.lisp:tanko
 # .config/stumpwm/conf.d/customs.lisp:tanko
-.config/stumpwm/conf.d/lisp-server.lisp:tanko
-.config/stumpwm/conf.d/init-root-menu.lisp:tanko
-.config/stumpwm/conf.d/autostart.lisp:tanko
+# .config/stumpwm/conf.d/lisp-server.lisp:tanko
+# .config/stumpwm/conf.d/init-root-menu.lisp:tanko
+# .config/stumpwm/conf.d/autostart.lisp:tanko
 
 # Configuration for work usage
 .config/emacs/localhost/profile.el:work

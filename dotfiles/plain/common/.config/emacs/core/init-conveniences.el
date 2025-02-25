@@ -78,9 +78,9 @@
   :ensure t
   :config (beacon-mode 1))
 
-(use-package hungry-delete
-  :ensure t
-  :config (global-hungry-delete-mode))
+;; (use-package hungry-delete
+;;   :ensure t
+;;   :config (global-hungry-delete-mode))
 
 (use-package aggressive-indent
   :ensure t

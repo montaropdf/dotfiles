@@ -49,6 +49,10 @@
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
 
+(push 'org straight-built-in-pseudo-packages)
+
+(push 'org-mode straight-built-in-pseudo-packages)
+
 (use-package f
   :straight t
   :ensure t)

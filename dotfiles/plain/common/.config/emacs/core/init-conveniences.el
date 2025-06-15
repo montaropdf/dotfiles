@@ -1,5 +1,13 @@
 (setq inhibit-startup-message t)
 
+(defconst IS-MAC     (eq system-type 'darwin))
+(defconst IS-LINUX   (eq system-type 'gnu/linux))
+(defconst IS-WINDOWS (memq system-type '(cygwin windows-nt ms-dos)))
+(defconst IS-BSD     (or IS-MAC (eq system-type 'berkeley-unix)))
+(defconst IS-WSL     (and IS-LINUX
+                          (string-match-p "Microsoft"
+                                          (shell-command-to-string "uname -a"))))
+
 (defvar home-dir (getenv "HOME"))
 
 (when (not (getenv "XDG_DATA_HOME"))
@@ -141,3 +149,11 @@
   :straight t)
 
 (pinentry-start)
+
+(when IS-WSL
+  ;; WSLg breaks copy-paste from Emacs into Windows
+  ;; see: https://www.lukas-barth.net/blog/emacs-wsl-copy-clipboard/
+  (setq select-active-regions nil
+        select-enable-clipboard 't
+        select-enable-primary nil
+        interprogram-cut-function #'gui-select-text))

@@ -12,4 +12,4 @@
   :after (ivy all-the-icons)
   :config (all-the-icons-ivy-setup))
 
-(load-theme #'doom-nord t)
+(load-theme #'doom-solarized-light t)

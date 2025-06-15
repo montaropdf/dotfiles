@@ -1,16 +1,16 @@
 (use-package restclient
-  :ensure t)
+  :straight t)
 
 (use-package company-restclient
-  :ensure t
+  :straight t
   :after restclient
   :config (add-to-list 'company-backends 'company-restclient))
 
 (use-package simple-httpd
-  :ensure t)
+  :straight t)
 
 (use-package impatient-mode
-  :ensure t
+  :straight t
   :after simple-httpd)
 
 (url-handler-mode 1)

@@ -5,19 +5,26 @@
 (setq bookmark-default-file (f-expand "bookmarks" emacs-user-data-dir))
 
 (use-package ipcalc
-  :ensure t
+  :straight t
   :defer t)
 
 (use-package direnv
-  :ensure t
+  :straight t
   :when (executable-find "direnv")
   :config (direnv-mode))
 
 (use-package crux
-  :ensure t
+  :straight t
   :bind (("<f6> o" . crux-open-with)
 	 ("C-a" . crux-move-beginning-of-line)))
 
 (use-package pcre2el
-  :ensure t
+  :straight t
   :config (pcre-mode))
+
+
+(use-package vterm
+  :straight t)
+
+;; (use-package multi-vterm
+;;   :straight t)

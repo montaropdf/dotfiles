@@ -1,5 +1,5 @@
 (use-package elpy
-  :ensure t
+  :straight t
   :defer t
   :when (member "python" emacs-configuration-tags-list)
   :config (defvar virtualenvs-data-dir (f-expand "virtualenvs" (getenv "XDG_DATA_HOME")))

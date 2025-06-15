@@ -4,11 +4,11 @@
        (message "Guile interpreter not found in guix profile"))
       (t
        (use-package guix
-	 :ensure t
+	 :straight t
 	 :defer t)
 
        (use-package pretty-sha-path
-	 :ensure t
+	 :straight t
 	 :defer t
 	 :after guix)))
 
@@ -16,10 +16,10 @@
 ;;     (message "Guile interpreter not found in guix profile"))
 
 ;; (use-package guix
-;;   :ensure t
+;;   :straight t
 ;;   :defer t)
 
 ;; (use-package pretty-sha-path
-;;   :ensure t
+;;   :straight t
 ;;   :defer t
 ;;   :after guix)

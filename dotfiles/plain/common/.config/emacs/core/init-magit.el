@@ -1,11 +1,14 @@
+(use-package transient
+  :straight t)
+
 (use-package magit
-  :ensure t
+  :straight t
   :bind ("C-x g" . magit-status))
 
 ;; (use-package emacsql-sqlite
-;;   :ensure t)
+;;   :straight t)
 
 (use-package forge
-  :ensure t
+  :straight t
   :after (magit ;; emacsql-sqlite
-		))
+	  ))

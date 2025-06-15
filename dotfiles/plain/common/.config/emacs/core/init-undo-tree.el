@@ -1,4 +1,4 @@
 (use-package undo-tree
-  :ensure t)
+  :straight t)
 
 (global-undo-tree-mode)

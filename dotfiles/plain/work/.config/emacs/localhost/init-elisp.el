@@ -1,5 +1,5 @@
 (use-package dash
-  :ensure t)
+  :straight t)
 
 (defun ielm-auto-complete ()
   "Enables `auto-complete' support in \\[ielm]."

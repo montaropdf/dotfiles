@@ -1,5 +1,5 @@
 (use-package company
-  :ensure t
+  :straight t
   :defer t
   :diminish (company-mode . " ⓐ")
   :config

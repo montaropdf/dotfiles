@@ -1,4 +1,4 @@
 (use-package which-key
-  :ensure t
+  :straight t
   :config
   (which-key-mode))

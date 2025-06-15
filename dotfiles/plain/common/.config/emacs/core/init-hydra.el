@@ -1,8 +1,8 @@
 (use-package hydra
-  :ensure hydra)
+  :straight hydra)
 
 (use-package pretty-hydra
-  :ensure t)
+  :straight t)
 
 (global-set-key
  (kbd "C-x t")

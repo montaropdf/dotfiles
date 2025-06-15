@@ -1,5 +1,5 @@
 (use-package treemacs
-  :ensure t
+  :straight t
   :defer t
   :config
   (progn
@@ -27,7 +27,7 @@
 
 (use-package treemacs-projectile
   :defer t
-  :ensure t
+  :straight t
   :after (treemacs projectile)
   :config (setq treemacs-header-function #'treemacs-projectile-create-header)
   :bind (:map global-map

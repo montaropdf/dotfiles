@@ -4,6 +4,7 @@ singularity=desktop,gaming,private,singularity,stumpwm,guix
 tanko=laptop,org,private,work
 guix-01=laptop,org,stumpwm,guix-01,work,guix
 dark-dwarf=server,dark-dwarf,guix,stumpwm
+fedora=laptop,work
 
 # Common files
 .emacs

@@ -66,35 +66,35 @@
 (global-set-key "'" 'skeleton-pair-insert-maybe)
 
 (use-package date2name
-  :ensure t)
+  :straight t)
 
-(use-package unicode-enbox
-  :ensure t)
+;; (use-package unicode-enbox
+;;   :straight t)
 
 (use-package s
-  :ensure t)
+  :straight t)
 
 (use-package beacon
-  :ensure t
+  :straight t
   :config (beacon-mode 1))
 
 ;; (use-package hungry-delete
-;;   :ensure t
+;;   :straight t
 ;;   :config (global-hungry-delete-mode))
 
 (use-package aggressive-indent
-  :ensure t
+  :straight t
   :config (global-aggressive-indent-mode 1))
 
 (use-package expand-region
-  :ensure t
+  :straight t
   :bind ("C-=" . er/expand-region))
 
 (use-package iedit
-  :ensure t)
+  :straight t)
 
 (use-package rainbow-delimiters
-  :ensure t
+  :straight t
   :hook (prog-mode . rainbow-delimiters-mode))
 
 ;; Copied from this location:
@@ -138,6 +138,6 @@
 (setq epa-pinentry-mode 'loopback)
 
 (use-package pinentry
-  :ensure t)
+  :straight t)
 
 (pinentry-start)

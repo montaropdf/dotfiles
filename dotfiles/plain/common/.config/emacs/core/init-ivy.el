@@ -1,12 +1,12 @@
 (use-package counsel
-  :ensure t
+  :straight t
   :bind
   (("M-y" . counsel-yank-pop)
    :map ivy-minibuffer-map
    ("M-y" . ivy-next-line)))
 
 (use-package ivy
-  :ensure t
+  :straight t
   :diminish (ivy-mode)
   :bind (("C-x b" . ivy-switch-buffer))
   :config
@@ -19,7 +19,7 @@
   )
 
 (use-package swiper
-  :ensure t
+  :straight t
   :bind (("C-s" . swiper)
          ("C-r" . swiper)
          ("C-c C-r" . ivy-resume)

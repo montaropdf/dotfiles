@@ -1,5 +1,5 @@
 (use-package ace-window
-  :ensure t
+  :straight t
   :init
   (progn
     (global-set-key [remap other-window] 'ace-window)
@@ -9,7 +9,7 @@
     ))
 
 (use-package window-jump
-  :ensure t
+  :straight t
   :bind (("s-<left>" . window-jump-left)
          ("s-<right>" . window-jump-right)
          ("s-<up>" . window-jump-up)

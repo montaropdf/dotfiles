@@ -1,21 +1,21 @@
 (use-package outshine
-  :ensure t)
+  :straight t)
 
 ;; Only useful for tanko
 (use-package outorg
-  :ensure t
+  :straight t
   :after (outshine org))
 ;; ########################
 
 (use-package outline-magic
-  :ensure t)
+  :straight t)
 
 (use-package outline-toc
-  :ensure t)
+  :straight t)
 
-(add-hook 'outline-mode-hook
-          (lambda ()
-            (require 'outline-cycle)))
+;; (add-hook 'outline-mode-hook
+;;           (lambda ()
+;;             (require 'outline-cycle)))
 
 (add-hook 'outline-minor-mode-hook
           (lambda ()

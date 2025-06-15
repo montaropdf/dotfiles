@@ -47,8 +47,8 @@ fedora=laptop,work
 .config/stumpwm/conf.d/keybindings.lisp:stumpwm
 
 # Linked configuration
-.config/emacs/localhost/init-cl.el:singularity,tanko,work
-.config/emacs/localhost/init-guix.el:work,guix
+.config/emacs/localhost/init-cl.el:singularity
+.config/emacs/localhost/init-guix.el:guix
 # .config/emacs/core/init-org.el:tanko,work
 
 # Configuration for the host singularity
@@ -89,10 +89,13 @@ fedora=laptop,work
 .config/emacs/localhost/setup-support-tools.el:work
 .config/emacs/localhost/init-dev.el:work
 .config/emacs/localhost/init-python.el:work
-.config/stumpwm/conf.d/init-modules.lisp:work
-.config/stumpwm/conf.d/customs.lisp:work
-.config/stumpwm/conf.d/init-root-menu.lisp:work
-.config/stumpwm/conf.d/autostart.lisp:work
+.config/emacs/localhost/init-org.el:work
+.config/emacs/localhost/init-org-roam.el:work
+.config/emacs/localhost/init-plantuml.el:work
+# .config/stumpwm/conf.d/init-modules.lisp:work
+# .config/stumpwm/conf.d/customs.lisp:work
+# .config/stumpwm/conf.d/init-root-menu.lisp:work
+# .config/stumpwm/conf.d/autostart.lisp:work
 
 # Configuration for the host dark-dwarf
 .config/emacs/localhost/profile.el:dark-dwarf

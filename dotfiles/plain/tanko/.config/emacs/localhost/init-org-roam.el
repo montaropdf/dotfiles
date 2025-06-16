@@ -6,7 +6,7 @@
   :init
   (setq org-roam-v2-ack t)
   :custom
-  (org-roam-directory "tmp/todel/notes")
+  (org-roam-directory "~/projects/evomacs")
   (org-roam-completion-everywhere t)
   (org-roam-capture-templates
    '(("d" "default" plain

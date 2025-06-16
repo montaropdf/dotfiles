@@ -14,6 +14,7 @@ fedora=laptop,work
 .config/emacs/core/init-undo-tree.el
 .config/emacs/core/init-which-key.el
 .config/emacs/core/init-winnav.el
+.config/emacs/core/init-org.el
 .config/emacs/core/init-outshine.el
 .config/emacs/core/init-theme.el
 .config/emacs/core/init-conveniences.el
@@ -74,6 +75,7 @@ fedora=laptop,work
 .config/emacs/localhost/init-file-support.el:tanko
 .config/emacs/localhost/setup-support-tools.el:tanko
 .config/emacs/localhost/init-dev.el:tanko
+.config/emacs/localhost/init-menu.el:tanko
 
 # .config/emacs/localhost/init-hydra.el:tanko
 # .config/emacs/localhost/init-projectile.el:tanko

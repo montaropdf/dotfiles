@@ -8,6 +8,7 @@
 			"init-ansible.el"
 			"init-plantuml.el"
 			"init-org.el"
-			"init-org-roam.el")))
+			"init-org-roam.el"
+			"init-menu.el")))
   (dolist (init-file init-file-list)
     (load-if-exists (f-expand init-file emacs-host-cfg-dir))))

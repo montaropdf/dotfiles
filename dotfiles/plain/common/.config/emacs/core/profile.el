@@ -2,6 +2,7 @@
 			"init-unicode.el"
 			"init-theme.el"
 			"init-which-key.el"
+			"init-org.el"
 			"init-outshine.el"
 			"init-winnav.el"
 			"init-ivy.el"

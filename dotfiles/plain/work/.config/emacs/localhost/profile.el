@@ -10,6 +10,7 @@
 			"init-python.el"
 			"setup-support-tools.el"
 			"init-web.el"
-			"init-ansible.el")))
+			"init-ansible.el"
+			"init-lsp.el")))
   (dolist (init-file init-file-list)
     (load-if-exists (f-expand init-file emacs-host-cfg-dir))))

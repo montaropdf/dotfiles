@@ -29,19 +29,11 @@
 ;; (use-package copilot
 ;;   :straight (:host github :repo "copilot-emacs/copilot.el" :files ("*.el"))
 ;;   :ensure t)
-<<<<<<< HEAD
-
-;; (add-hook 'prog-mode-hook 'copilot-mode)
-;; (define-key copilot-completion-map (kbd "<tab>") 'copilot-accept-completion)
-;; (define-key copilot-completion-map (kbd "TAB") 'copilot-accept-completion)
-
-=======
 ;; 
 ;; (add-hook 'prog-mode-hook 'copilot-mode)
 ;; (define-key copilot-completion-map (kbd "<tab>") 'copilot-accept-completion)
 ;; (define-key copilot-completion-map (kbd "TAB") 'copilot-accept-completion)
 ;; 
->>>>>>> origin/master
 ;; (transient-define-prefix global-transient ()
 ;;   ["General menu."
 ;;    ["Copilot"
@@ -52,10 +44,6 @@
 ;;     ;; ("u" "Copilot Update" copilot-update)
 ;;     ;; ("v" "Copilot Version" copilot-version)
 ;;     ]])
-<<<<<<< HEAD
-
-=======
 ;; 
->>>>>>> origin/master
 ;; (global-set-key (kbd "C-s-g") 'global-transient)
 

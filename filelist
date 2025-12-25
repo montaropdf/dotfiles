@@ -1,9 +1,9 @@
 # Groups
 singularity=desktop,gaming,private,singularity,stumpwm,guix
 # tanko=laptop,org,private,tanko,stumpwm
-tanko=laptop,org,private,work
+tanko=laptop,org,private
 guix-01=laptop,org,stumpwm,guix-01,work,guix
-dark-dwarf=server,dark-dwarf,guix,stumpwm
+dark-dwarf=server,dark-dwarf
 fedora=laptop,work
 
 # Common files
@@ -14,6 +14,7 @@ fedora=laptop,work
 .config/emacs/core/init-undo-tree.el
 .config/emacs/core/init-which-key.el
 .config/emacs/core/init-winnav.el
+.config/emacs/core/init-org.el
 .config/emacs/core/init-outshine.el
 .config/emacs/core/init-theme.el
 .config/emacs/core/init-conveniences.el
@@ -25,8 +26,8 @@ fedora=laptop,work
 .config/emacs/core/init-pass.el
 .config/emacs/core/init-magit.el
 .config/emacs/core/init-company.el
-.config/alacritty/alacritty.yml
-.config/nyxt/init.lisp
+# .config/alacritty/alacritty.yml
+# .config/nyxt/init.lisp
 # .zshrc
 # .config/apollo/revecloud-admin.conf
 # .config/apollo/revecloud-dev.conf
@@ -43,12 +44,12 @@ fedora=laptop,work
 .config/stumpwm/conf.d/userenv.lisp:stumpwm
 .config/stumpwm/conf.d/equake-conf.lisp:stumpwm
 .config/stumpwm/conf.d/lisp-server.lisp:guix
-.config/stumpwm/conf.d/init-modeline.lisp:laptop,desktop
+.config/stumpwm/conf.d/init-modeline.lisp:desktop
 .config/stumpwm/conf.d/keybindings.lisp:stumpwm
 
 # Linked configuration
-.config/emacs/localhost/init-cl.el:singularity,tanko,work
-.config/emacs/localhost/init-guix.el:work,guix
+.config/emacs/localhost/init-cl.el:singularity
+.config/emacs/localhost/init-guix.el:guix
 # .config/emacs/core/init-org.el:tanko,work
 
 # Configuration for the host singularity
@@ -61,18 +62,28 @@ fedora=laptop,work
 .config/stumpwm/conf.d/autostart.lisp:singularity
 
 # Configuration for the host tanko
-# .config/emacs/localhost/profile.el:tanko
-# .config/emacs/localhost/init-font.el:tanko
-# .config/emacs/localhost/init-magit.el:tanko
-# .config/emacs/localhost/init-ansible.el:tanko
-# .config/emacs/localhost/init-dash.el:tanko
+.config/emacs/localhost/profile.el:tanko
+.config/emacs/localhost/init-font.el:tanko
+.config/emacs/localhost/init-ansible.el:tanko
+.config/emacs/localhost/init-python.el:tanko
+.config/emacs/custom.el:tanko
+.config/emacs/localhost/init-org.el:tanko
+.config/emacs/localhost/init-org-roam.el:tanko
+.config/emacs/localhost/init-plantuml.el:tanko
+.config/emacs/localhost/init-web.el:tanko
+.config/emacs/localhost/init-elisp.el:tanko
+.config/emacs/localhost/init-file-support.el:tanko
+.config/emacs/localhost/setup-support-tools.el:tanko
+.config/emacs/localhost/init-dev.el:tanko
+.config/emacs/localhost/init-menu.el:tanko
+
 # .config/emacs/localhost/init-hydra.el:tanko
 # .config/emacs/localhost/init-projectile.el:tanko
-# .config/emacs/localhost/init-python.el:tanko
 # .config/emacs/localhost/init-skeletor.el:tanko
 # .config/emacs/localhost/init-yasnippet.el:tanko
 # .config/emacs/localhost/init-outline.el:tanko
-# .config/emacs/custom.el:tanko
+# .config/emacs/localhost/init-magit.el:tanko
+# .config/emacs/localhost/init-dash.el:tanko
 # .config/stumpwm/conf.d/init-modules.lisp:tanko
 # .config/stumpwm/conf.d/customs.lisp:tanko
 # .config/stumpwm/conf.d/lisp-server.lisp:tanko
@@ -89,10 +100,13 @@ fedora=laptop,work
 .config/emacs/localhost/setup-support-tools.el:work
 .config/emacs/localhost/init-dev.el:work
 .config/emacs/localhost/init-python.el:work
-.config/stumpwm/conf.d/init-modules.lisp:work
-.config/stumpwm/conf.d/customs.lisp:work
-.config/stumpwm/conf.d/init-root-menu.lisp:work
-.config/stumpwm/conf.d/autostart.lisp:work
+.config/emacs/localhost/init-org.el:work
+.config/emacs/localhost/init-org-roam.el:work
+.config/emacs/localhost/init-plantuml.el:work
+# .config/stumpwm/conf.d/init-modules.lisp:work
+# .config/stumpwm/conf.d/customs.lisp:work
+# .config/stumpwm/conf.d/init-root-menu.lisp:work
+# .config/stumpwm/conf.d/autostart.lisp:work
 
 # Configuration for the host dark-dwarf
 .config/emacs/localhost/profile.el:dark-dwarf

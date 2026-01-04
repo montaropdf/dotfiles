@@ -9,6 +9,7 @@ fedora=laptop,work
 # Common files
 .emacs
 .config/emacs/core/profile.el
+.config/emacs/core/init-completion.el
 .config/emacs/core/init-ivy.el
 .config/emacs/core/init-unicode.el
 .config/emacs/core/init-undo-tree.el

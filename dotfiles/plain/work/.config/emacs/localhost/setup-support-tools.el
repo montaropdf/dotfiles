@@ -1,3 +1,13 @@
+(if default-frame-alist
+    (add-to-list 'default-frame-alist '(font . "GeistMono Nerd Font Mono"))
+  (setq default-frame-alist '((font . "GeistMono Nerd Font Mono")))
+  )
+
+(if initial-frame-alist
+    (add-to-list 'initial-frame-alist '(font . "GeistMono Nerd Font Mono"))
+  (setq initial-frame-alist '((font . "GeistMono Nerd Font Mono")))
+  )
+
 (setq abbrev-file-name (f-expand "abbrev_defs" emacs-user-data-dir))
 
 (setq-default abbrev-mode t)
@@ -21,7 +31,6 @@
 (use-package pcre2el
   :straight t
   :config (pcre-mode))
-
 
 (use-package vterm
   :straight t)

@@ -25,8 +25,11 @@
 (pending-delete-mode t)
 (abbrev-mode t)
 
+
+
 (global-set-key (kbd "<f5>") 'revert-buffer)
 
+(setq imenu-auto-rescan t)
 (setq calendar-day-name-array ["Dimanche" "Lundi" "Mardi" "Mercredi" "Jeudi" "Vendredi" "Samedi"])
 (setq calendar-month-name-array ["Janvier" "Février" "Mars" "Avril" "Mai" "Juin" "Juillet" "Août" "Septembre" "Octobre" "Novembre" "Decembre"])
 (setq calendar-time-display-form (quote (24-hours ":" minutes (if time-zone " (") time-zone (if time-zone ")"))))

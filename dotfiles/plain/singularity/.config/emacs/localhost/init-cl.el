@@ -1,9 +1,9 @@
-(setq reve:cl-implementation (executable-find "sbcl"))
+;; (setq reve:cl-implementation (executable-find "sbcl"))
 
-(use-package sly
-  :straight t
-  :defer t
-  :config (setq inferior-lisp-program reve:cl-implementation))
+;; (use-package sly
+;;   :straight t
+;;   :defer t
+;;   :config (setq inferior-lisp-program reve:cl-implementation))
 
 ;; (use-package sly-quicklisp
 ;;   :straight t

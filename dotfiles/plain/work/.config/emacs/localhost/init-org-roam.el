@@ -98,3 +98,13 @@ capture was not aborted."
              (lambda ()
                (when (equal org-state "DONE")
                  (my/org-roam-copy-todo-to-today))))
+
+(use-package org-mem
+  :straight t
+  :after org
+  :custom
+  (org-mem-watch-dirs '("~/org/"))
+  (org-mem-do-sync-with-org-id t)
+  :config
+  (org-mem-updater-mode)
+  )
